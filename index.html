@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Gear Auto Repair | High-Performance & Supercar Engineering</title>
+
+    <!-- Google Fonts: Playfair Display for headings & Poppins for body/UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleresponsive.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <nav class="nav-inner">
+                <a href="#home" class="brand-logo">
+                    <div class="logo-emblem">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div>
+                        NEXT GEAR
+                        <span class="brand-sub">Auto Repair &bull; Tuning</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navlinks -->
+                <ul class="nav-menu">
+                    <li class="nav-item active"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#products">Performance Lab</a></li>
+                    <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a href="#faqs">Diagnostics FAQ</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-right-actions">
+                    <button class="btn-primary" onclick="openBookingModal('General VIP Diagnostic')">
+                        <i class="fa-solid fa-wrench"></i> Book Service
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-drawer" id="mobileDrawer">
+        <div>
+            <div class="drawer-header">
+                <div class="brand-logo" style="font-size: 1.3rem;">
+                    <div class="logo-emblem" style="width: 36px; height: 36px; font-size: 1rem;">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div>
+                        NEXT GEAR
+                        <span class="brand-sub">Chandigarh Lab</span>
+                    </div>
+                </div>
+                <button class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <ul class="drawer-nav">
+                <li><a href="#home" class="drawer-link">Home</a></li>
+                <li><a href="#about" class="drawer-link">About Engineering</a></li>
+                <li><a href="#services" class="drawer-link">Performance Services</a></li>
+                <li><a href="#products" class="drawer-link">Auto Parts Lab</a></li>
+                <li><a href="#gallery" class="drawer-link">Supercar Gallery</a></li>
+                <li><a href="#faqs" class="drawer-link">Telemetry FAQ</a></li>
+                <li><a href="#contact" class="drawer-link">Chandigarh Workshop</a></li>
+            </ul>
+        </div>
+
+        <div class="drawer-footer">
+            <button class="btn-primary" style="width: 100%; margin-bottom: 16px;"
+                onclick="openBookingModal('Mobile Menu Booking')">
+                <i class="fa-solid fa-calendar-check"></i> Book VIP Slot
+            </button>
+            <p style="font-size: 0.8rem; color: #8e8e99;">
+                <i class="fa-solid fa-location-dot" style="color: var(--neon-lime);"></i> Plot 48, Ind. Area Phase II,
+                Chandigarh
+            </p>
+        </div>
+    </aside>
+
+    <section class="hero-slider-section" id="home">
+        <div class="hero-overlay-grid"></div>
+
+        <!-- Slide 1: Supercar Bonnet Open View -->
+        <div class="hero-slide slide-bg-1 active" data-slide="0">
+            <div class="container" style="height: 100%;">
+                <div class="hero-content">
+                    <div class="hero-spec-strip">
+                        <span class="spec-item-badge"><i class="fa-solid fa-microchip"></i> 0.01mm Precision
+                            Tuning</span>
+                        <span class="spec-item-badge"><i class="fa-solid fa-award"></i> Master Certified Guild</span>
+                        <span class="spec-item-badge"><i class="fa-solid fa-gauge-high"></i> AWD Dyno Calibrated</span>
+                    </div>
+                    <h1 class="hero-heading">
+                        Exotic Powertrains Built For <span class="lime-accent">Unrivaled Domination</span>
+                    </h1>
+                    <p class="hero-subtext">
+                        Step beyond ordinary maintenance. Next Gear Auto Repair is Chandigarh's premier supercar
+                        workshop delivering surgical engine blueprinting, bespoke ECU remapping, and uncompromising
+                        track performance.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="openBookingModal('Supercar Diagnostic Check')">
+                            <i class="fa-solid fa-screwdriver-wrench"></i> Schedule Diagnostic
+                        </button>
+                        <a href="#services" class="btn-outline">
+                            <i class="fa-solid fa-sliders"></i> Explore Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Twin-Turbo Engine Mechanics -->
+        <div class="hero-slide slide-bg-2" data-slide="1">
+            <div class="container" style="height: 100%;">
+                <div class="hero-content">
+                    <div class="hero-spec-strip">
+                        <span class="spec-item-badge"><i class="fa-solid fa-fire-burner"></i> Twin-Turbo
+                            Engineering</span>
+                        <span class="spec-item-badge"><i class="fa-solid fa-shield-halved"></i> Titanium Spec
+                            Overhaul</span>
+                        <span class="spec-item-badge"><i class="fa-solid fa-stopwatch"></i> Zero-Tolerance Dyno</span>
+                    </div>
+                    <h2 class="hero-heading">
+                        Micro-Tolerance <span class="lime-accent">V8 &amp; V12 Engine</span> Blueprinting
+                    </h2>
+                    <p class="hero-subtext">
+                        From Ferrari flat-plane cranks to Porsche twin-turbo boxer engines, our clean-room rebuild
+                        facility ensures race-proven reliability and blistering throttle response.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="openBookingModal('Engine Rebuild Consultation')">
+                            <i class="fa-solid fa-circle-nodes"></i> Request Powertrain Lab
+                        </button>
+                        <a href="#products" class="btn-outline">
+                            <i class="fa-solid fa-boxes-stacked"></i> View Race Hardware
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Aerodynamic Track Setup -->
+        <div class="hero-slide slide-bg-3" data-slide="2">
+            <div class="container" style="height: 100%;">
+                <div class="hero-content">
+                    <div class="hero-spec-strip">
+                        <span class="spec-item-badge"><i class="fa-solid fa-crosshairs"></i> 3D Laser Alignment</span>
+                        <span class="spec-item-badge"><i class="fa-solid fa-bolt"></i> Carbon-Ceramic Brakes</span>
+                        <span class="spec-item-badge"><i class="fa-solid fa-certificate"></i> FIA Level Setup</span>
+                    </div>
+                    <h2 class="hero-heading">
+                        Track-Forged Chassis &amp; <span class="lime-accent">Carbon Dynamics</span>
+                    </h2>
+                    <p class="hero-subtext">
+                        Dial in corner-balancing, custom damper valving, and aerodynamic stability with our laser-guided
+                        geometry rigs designed for the world’s fastest road machines.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="openBookingModal('Chassis Laser Calibration')">
+                            <i class="fa-solid fa-compass-drafting"></i> Laser Setup Booking
+                        </button>
+                        <a href="#gallery" class="btn-outline">
+                            <i class="fa-solid fa-camera"></i> Inspect Supercar Bay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows & Dots -->
+        <div class="slider-nav-arrows">
+            <button class="slider-arrow-btn" id="heroPrevBtn" aria-label="Previous Slide">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="slider-arrow-btn" id="heroNextBtn" aria-label="Next Slide">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="slider-dots-container" id="heroDots">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+    </section>
+
+    <div class="ticker-wrap">
+        <div class="ticker-track">
+            <div class="ticker-item lime-text">NEXT GEAR AUTO REPAIR</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item outline-text">PRECISION TUNING</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item white-text">CHANDIGARH SUPERCAR LAB</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item lime-text">AWD DYNO TESTED</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item outline-text">CERAMIC MATRIX COATING</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item white-text">0.01MM TOLERANCE</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item lime-text">NEXT GEAR AUTO REPAIR</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item outline-text">PRECISION TUNING</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item white-text">CHANDIGARH SUPERCAR LAB</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item lime-text">AWD DYNO TESTED</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item outline-text">CERAMIC MATRIX COATING</div>
+            <span class="ticker-divider">&bull;</span>
+            <div class="ticker-item white-text">0.01MM TOLERANCE</div>
+            <span class="ticker-divider">&bull;</span>
+        </div>
+    </div>
+
+    <section class="section-padding about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Visual Column -->
+                <div class="about-image-wrapper">
+                    <div class="about-main-img-box">
+                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80"
+                            alt="Next Gear Auto Workshop Chandigarh"
+                            onerror="this.src='https://placehold.co/1200x800/0d0d10/d9e021?text=Next+Gear+Master+Workshop'">
+                    </div>
+
+                    <!-- Futuristic Floating Diagnostic HUD -->
+                    <div class="about-floating-telemetry">
+                        <div class="telemetry-header">
+                            <span><i class="fa-solid fa-satellite-dish"></i> LIVE WORKSHOP HUD</span>
+                            <span style="color: #4ade80;">ACTIVE</span>
+                        </div>
+                        <div class="telemetry-row">
+                            <span>Clean Room Status:</span>
+                            <span>ISO CLASS 7</span>
+                        </div>
+                        <div class="telemetry-row">
+                            <span>Dyno Load Max:</span>
+                            <span>2,000+ BHP</span>
+                        </div>
+                        <div class="telemetry-row">
+                            <span>Laser Accuracy:</span>
+                            <span>&plusmn;0.005&deg;</span>
+                        </div>
+                        <div class="telemetry-row">
+                            <span>Guild Engineers:</span>
+                            <span>18 Specialists</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Narrative Column -->
+                <div class="about-text-content">
+                    <div class="badge-tag">
+                        <i class="fa-solid fa-atom"></i> Next-Gen Auto Architecture
+                    </div>
+                    <h2 class="section-title">
+                        Where Aerospace Precision Meets <span>Automotive Passion</span>
+                    </h2>
+                    <p class="section-desc">
+                        Founded with a vision to redefine supercar ownership in Northern India, Next Gear Auto Repair
+                        operates at the intersection of Formula telemetry and artisanal restoration. We eliminate the
+                        guesswork using dealer-level diagnostic protocols, custom-built dyno cells, and genuine OEM
+                        motorsport components.
+                    </p>
+
+                    <!-- Animated Live Stats Counter -->
+                    <div class="about-stats-strip">
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="2840">0</div>
+                            <div class="stat-label">Supercars Calibrated</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="99.8" data-decimals="1">0</div>
+                            <div class="stat-label">% Dyno Accuracy</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="18">0</div>
+                            <div class="stat-label">Master Engineers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num" data-target="100">0</div>
+                            <div class="stat-label">% Customer Fidelity</div>
+                        </div>
+                    </div>
+
+                    <!-- Checklist -->
+                    <ul class="tech-specs-checklist">
+                        <li><i class="fa-solid fa-circle-check"></i> Factory Certified German &amp; Italian Tools</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Real-Time Telemetry Cloud Logging</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Zero-Dust Detailing Isolation Chamber</li>
+                        <li><i class="fa-solid fa-circle-check"></i> In-House Component Ultrasonic Bath</li>
+                    </ul>
+
+                    <button class="btn-primary" onclick="openBookingModal('Facility VIP Walkthrough')">
+                        <i class="fa-solid fa-building-shield"></i> Book Workshop Tour
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding services-section" id="services">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 50px auto;">
+                <div class="badge-tag">
+                    <i class="fa-solid fa-microchip"></i> Engineering Catalog
+                </div>
+                <h2 class="section-title">
+                    Master-Tier Services Engineered For <span>Superior Velocity</span>
+                </h2>
+                <p class="section-desc" style="margin-left: auto; margin-right: auto;">
+                    Every vehicle is evaluated like a race prototype. Explore our 6 flagship engineering protocols
+                    backed by comprehensive dyno documentation and digital health passports.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-card-header">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-engine"></i>
+                            </div>
+                            <span class="service-num">01</span>
+                        </div>
+                        <h3 class="service-title">V12 &amp; Twin-Turbo Engine Rebuilds</h3>
+                        <p class="service-desc">
+                            Complete teardown, sonic degreasing, forged piston balancing, and blueprinted tolerances
+                            exceeding factory OEM specifications for Lamborghini, Ferrari, and Porsche.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li><i class="fa-solid fa-check"></i> Custom rod clearance sizing</li>
+                            <li><i class="fa-solid fa-check"></i> Port &amp; polished combustion chambers</li>
+                            <li><i class="fa-solid fa-check"></i> 100-hour dyno break-in cycle</li>
+                        </ul>
+                    </div>
+                    <div class="service-card-footer">
+                        <span class="service-price-est">From &#8377;1,25,000</span>
+                        <span class="service-action-link" onclick="openBookingModal('V12 Engine Rebuild')">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-card-header">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <span class="service-num">02</span>
+                        </div>
+                        <h3 class="service-title">Precision ECU Remapping &amp; Dyno Tuning</h3>
+                        <p class="service-desc">
+                            Custom Stage 1, 2, and 3 engine management maps tailored to Indian atmospheric density, fuel
+                            octane grades, and aftermarket forced induction hardware.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li><i class="fa-solid fa-check"></i> 4-Wheel synchronized dyno pulls</li>
+                            <li><i class="fa-solid fa-check"></i> Pops, bangs &amp; anti-lag custom calibration</li>
+                            <li><i class="fa-solid fa-check"></i> Instant OBD recovery fallback</li>
+                        </ul>
+                    </div>
+                    <div class="service-card-footer">
+                        <span class="service-price-est">From &#8377;45,000</span>
+                        <span class="service-action-link" onclick="openBookingModal('Precision ECU Remap')">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-card-header">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-disc-drive"></i>
+                            </div>
+                            <span class="service-num">03</span>
+                        </div>
+                        <h3 class="service-title">Carbon-Ceramic Braking &amp; Suspension</h3>
+                        <p class="service-desc">
+                            Thermal wear scanning for carbon-ceramic matrices, custom Brembo caliper overhauls,
+                            high-temperature fluid flushes, and Öhlins/KW coilover setups.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li><i class="fa-solid fa-check"></i> Laser rotor thickness testing</li>
+                            <li><i class="fa-solid fa-check"></i> Corner balancing by corner weight scales</li>
+                            <li><i class="fa-solid fa-check"></i> Braided stainless-steel line retrofits</li>
+                        </ul>
+                    </div>
+                    <div class="service-card-footer">
+                        <span class="service-price-est">From &#8377;65,000</span>
+                        <span class="service-action-link" onclick="openBookingModal('Braking & Suspension Setup')">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-card-header">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <span class="service-num">04</span>
+                        </div>
+                        <h3 class="service-title">Dual-Clutch Transmission Overhaul</h3>
+                        <p class="service-desc">
+                            PDK, DSG, and Graziano dual-clutch transmission rebuilds, clutch pack gap adjustments,
+                            mechatronic replacement, and high-torque mechanical diff upgrades.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li><i class="fa-solid fa-check"></i> Mechatronic solenoid rebuilds</li>
+                            <li><i class="fa-solid fa-check"></i> Heavy-duty clutch disk replacements</li>
+                            <li><i class="fa-solid fa-check"></i> Adaptations &amp; launch control resets</li>
+                        </ul>
+                    </div>
+                    <div class="service-card-footer">
+                        <span class="service-price-est">From &#8377;85,000</span>
+                        <span class="service-action-link" onclick="openBookingModal('Dual-Clutch Transmission')">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-card-header">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-crosshairs"></i>
+                            </div>
+                            <span class="service-num">05</span>
+                        </div>
+                        <h3 class="service-title">Advanced 3D Laser Wheel Alignment</h3>
+                        <p class="service-desc">
+                            Military-grade 3D laser telemetry alignment for extreme camber, caster, and toe settings
+                            configured specifically for Buddh International Circuit or street balance.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li><i class="fa-solid fa-check"></i> Sub-millimeter laser target precision</li>
+                            <li><i class="fa-solid fa-check"></i> Ride height sensor re-adaptation</li>
+                            <li><i class="fa-solid fa-check"></i> Centerline yaw rate calibration</li>
+                        </ul>
+                    </div>
+                    <div class="service-card-footer">
+                        <span class="service-price-est">From &#8377;12,000</span>
+                        <span class="service-action-link" onclick="openBookingModal('3D Laser Alignment')">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-card-header">
+                            <div class="service-icon-box">
+                                <i class="fa-solid fa-shield-virus"></i>
+                            </div>
+                            <span class="service-num">06</span>
+                        </div>
+                        <h3 class="service-title">Concours Detailing &amp; Ceramic Matrix</h3>
+                        <p class="service-desc">
+                            Multi-stage paint correction under LED inspection arrays, self-healing TPU PPF installation,
+                            and aerospace-grade 10H ceramic graphene nano-infusion.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li><i class="fa-solid fa-check"></i> 99% swirl and hologram removal</li>
+                            <li><i class="fa-solid fa-check"></i> 5-Year hydrophobic warranty</li>
+                            <li><i class="fa-solid fa-check"></i> Full undercarriage dry-ice cleaning</li>
+                        </ul>
+                    </div>
+                    <div class="service-card-footer">
+                        <span class="service-price-est">From &#8377;55,000</span>
+                        <span class="service-action-link" onclick="openBookingModal('Concours Detailing & PPF')">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding products-section" id="products">
+        <div class="container">
+            <div class="carousel-top-controls">
+                <div>
+                    <div class="badge-tag">
+                        <i class="fa-solid fa-trophy"></i> Next Gear Performance Hardware
+                    </div>
+                    <h2 class="section-title" style="margin-bottom: 0;">
+                        Race-Grade Hardware &amp; <span>Bespoke Components</span>
+                    </h2>
+                </div>
+                <div class="carousel-arrows">
+                    <button class="carousel-btn" id="prodPrevBtn" aria-label="Previous Product">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn" id="prodNextBtn" aria-label="Next Product">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slider Viewport -->
+            <div class="products-slider-wrapper">
+                <div class="products-track" id="productsTrack">
+
+                    <!-- Product 1 -->
+                    <div class="product-card" data-prod-id="1">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+                                alt="Titanium Valvetronic Exhaust"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Titanium+Exhaust'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Exhaust Systems</span>
+                                <h4 class="product-title">Titanium Valvetronic Exhaust</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">Grade 5 Titanium</span>
+                                    <span class="spec-pill">-14.2 kg reduction</span>
+                                    <span class="spec-pill">Wireless Valve</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;3,45,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Titanium Valvetronic Exhaust', '&#8377;3,45,000', 'Handcrafted from Aerospace Grade-5 Titanium featuring CNC machined acoustic valves and burnt blue dual tips. Unlocks an intoxicating high-pitch scream with zero drone at highway speeds.', 'Grade 5 Titanium, 3.5-inch diameter, Wireless Remote, +24 BHP Gain')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-prod-id="2">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1600793575654-910699b5e4d4?auto=format&fit=crop&w=800&q=80"
+                                alt="Carbon-Ceramic Brake Rotors"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Carbon+Ceramic+Rotors'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Braking Systems</span>
+                                <h4 class="product-title">Carbon-Ceramic Rotors &amp; Calipers</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">410mm Front / 390mm Rear</span>
+                                    <span class="spec-pill">Monoblock 6-Pot</span>
+                                    <span class="spec-pill">1,000&deg;C Resilient</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;6,80,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Carbon-Ceramic Rotors & Calipers', '&#8377;6,80,000', 'Engineered to withstand extreme track punishment without brake fade. Carbon matrix construction reduces unsprung rotational mass by over 45% compared to cast iron rotors.', '410mm diameter, Forged 6-Piston Calipers, Pagid RSC1 Pads Included')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-prod-id="3">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80"
+                                alt="Forged Monoblock Wheels"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Forged+Wheels'">
+                            <span class="product-stock-tag">CUSTOM ORDER</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Wheel Dynamics</span>
+                                <h4 class="product-title">Forged Monoblock Wheels (Set)</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">6061-T6 Aluminum</span>
+                                    <span class="spec-pill">Centerlock Capable</span>
+                                    <span class="spec-pill">8.4 kg / Wheel</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;4,90,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Forged Monoblock Wheels (Set)', '&#8377;4,90,000', 'Milled from a solid billet of aerospace 6061-T6 aluminum using 10,000-ton forging presses. Optimized through finite element structural analysis to provide maximum stiffness under high-G cornering.', '20x9.5 Front, 21x12.5 Rear, Custom PCD & Offset, Satin Carbon Finish')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-prod-id="4">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=800&q=80"
+                                alt="Dry Carbon Intake Plenum"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Carbon+Intake'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Induction Hardware</span>
+                                <h4 class="product-title">Dry Carbon Fiber Intake Plenum</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">Pre-preg Autoclave</span>
+                                    <span class="spec-pill">+32 CFM Air Velocity</span>
+                                    <span class="spec-pill">Thermal Barrier</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;2,15,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Dry Carbon Fiber Intake Plenum', '&#8377;2,15,000', 'Autoclaved pre-preg carbon plenum with velocity stacks inside each runner. Lowers intake temperatures significantly while delivering crisp, acoustic induction feedback into the cabin.', 'Carbon Twill 2x2, High-Flow Dry Filters, +18 BHP without tune')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-prod-id="5">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+                                alt="Multi-Way Track Coilovers"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Coilovers'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Chassis Calibration</span>
+                                <h4 class="product-title">Multi-Way Coilover Track System</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">External Reservoir</span>
+                                    <span class="spec-pill">3-Way Adjustable</span>
+                                    <span class="spec-pill">Spherical Bearings</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;3,95,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Multi-Way Coilover Track System', '&#8377;3,95,000', 'Independent low-speed and high-speed compression and rebound adjustment. Includes remote piggyback nitrogen canisters for continuous thermal stability during 30-minute hot stints.', '36 Damping clicks, Helper springs included, Camber plates pre-mounted')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-prod-id="6">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
+                                alt="Billet Dual Blow-Off Valves"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Blow+Off+Valves'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Boost Control</span>
+                                <h4 class="product-title">Billet Dual Blow-Off Valves</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">50mm Piston</span>
+                                    <span class="spec-pill">Up to 3.5 Bar</span>
+                                    <span class="spec-pill">Zero Compressor Surge</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;65,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Billet Dual Blow-Off Valves', '&#8377;65,000', 'CNC machined from T6061 billet aluminum with viton o-ring seals. Designed to vent large volumes of pressurized air quickly to safeguard twin-turbo setups against compressor flutter.', 'V-band connection, Dual quick-response springs, Anodized Acid Gold')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card" data-prod-id="7">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80"
+                                alt="High-Flow Downpipes"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Downpipes'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Exhaust Systems</span>
+                                <h4 class="product-title">Ceramic-Coated Downpipes</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">Inconel Heat Shield</span>
+                                    <span class="spec-pill">200-Cell Race Cat</span>
+                                    <span class="spec-pill">Catless Option</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;1,85,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Ceramic-Coated Downpipes', '&#8377;1,85,000', 'Features integrated thermal insulation blankets and mandrel-bent 3-inch 304 stainless steel tubing to drastically reduce turbo backpressure and spool latency.', 'TIG-welded, Ceramic heat shielding, +28 BHP and +45 Nm Torque')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card" data-prod-id="8">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=800&q=80"
+                                alt="Race Telemetry Dash"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Telemetry+Dash'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Electronics &amp; Logging</span>
+                                <h4 class="product-title">Digital Race Telemetry Dash</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">7-Inch High Brightness</span>
+                                    <span class="spec-pill">CAN-Bus Master</span>
+                                    <span class="spec-pill">GPS Lap Timer 20Hz</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;1,55,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Digital Race Telemetry Dash', '&#8377;1,55,000', 'Full-color anti-glare display with programmable shift lights and real-time live telemetry display for oil pressure, boost levels, lambda ratios, and predictive lap deltas.', 'CAN-Bus compatible, 20Hz GPS antenna, Internal 4GB datalogging')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 9 -->
+                    <div class="product-card" data-prod-id="9">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80"
+                                alt="Carbon Front Splitter"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Carbon+Splitter'">
+                            <span class="product-stock-tag">CUSTOM ORDER</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Aero Dynamics</span>
+                                <h4 class="product-title">Carbon Front Aero Splitter</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">Wind-Tunnel Proven</span>
+                                    <span class="spec-pill">+85kg Downforce @ 200km/h</span>
+                                    <span class="spec-pill">Dry Carbon Core</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;2,35,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Carbon Front Aero Splitter', '&#8377;2,35,000', 'Reinforced with titanium undertray rub blocks to prevent scrape damage while producing massive front-axle downforce at high speed track corners.', 'Direct chassis bracket mounting, Gloss UV Clearcoat, CFD Verified')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-card" data-prod-id="10">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80"
+                                alt="Stage-3 ECU Tuner Module"
+                                onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Stage+3+ECU'">
+                            <span class="product-stock-tag">IN LAB</span>
+                        </div>
+                        <div class="product-details">
+                            <div>
+                                <span class="product-cat">Tuning Modules</span>
+                                <h4 class="product-title">Custom Stage-3 ECU Tuner Module</h4>
+                                <div class="product-specs-pill">
+                                    <span class="spec-pill">Bluetooth Control</span>
+                                    <span class="spec-pill">5 Switchable Maps</span>
+                                    <span class="spec-pill">Meth Injection Ready</span>
+                                </div>
+                            </div>
+                            <div class="product-footer">
+                                <span class="product-price">&#8377;1,20,000</span>
+                                <button class="product-quick-btn"
+                                    onclick="openProductQuickView('Custom Stage-3 ECU Tuner Module', '&#8377;1,20,000', 'Plug-and-play performance piggyback unit that overrides boost limiters, fuel trimming, and ignition advance safely with built-in engine safety triggers.', 'Smartphone App synchronization, Valet & Eco Mode toggles, Full OBD Support')">
+                                    Inspect
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Pagination Dots -->
+            <div class="products-dots-pagination" id="prodDotsContainer"></div>
+        </div>
+    </section>
+
+    <section class="cinematic-cta-section">
+        <div class="cta-light-beam"></div>
+        <div class="container">
+            <div class="cta-inner-box">
+                <div class="badge-tag" style="background: rgba(0,0,0,0.8);">
+                    <i class="fa-solid fa-bolt"></i> VIP Concierge Telemetry
+                </div>
+                <h2 class="cta-title">
+                    Uncompromising Velocity <span>Awaits Your Machine</span>
+                </h2>
+                <p class="cta-description">
+                    Don't leave high-performance engineering to chance. Secure an exclusive diagnostic bay session at
+                    our Chandigarh master facility today.
+                </p>
+                <div class="cta-btn-group">
+                    <button class="btn-primary" onclick="openBookingModal('Instant VIP Concierge Diagnostic')">
+                        <i class="fa-solid fa-calendar-check"></i> Book VIP Diagnostic Bay
+                    </button>
+                    <a href="tel:+919876543210" class="btn-outline">
+                        <i class="fa-solid fa-phone-volume"></i> Direct Line: +91 98765 43210
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding gallery-section" id="gallery">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
+                <div class="badge-tag">
+                    <i class="fa-solid fa-camera-retro"></i> Visual Portfolio
+                </div>
+                <h2 class="section-title">
+                    The Craft In Action: <span>Supercar Showcase</span>
+                </h2>
+                <p class="section-desc" style="margin-left: auto; margin-right: auto;">
+                    An inside look at our Chandigarh clean-room workshop, dynamometer runs, track builds, and bespoke
+                    exterior refinishing.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="gallery-filter-bar">
+                <button class="gallery-tab-btn active" data-filter="all">All Showcase (16)</button>
+                <button class="gallery-tab-btn" data-filter="hypercars">Hypercars</button>
+                <button class="gallery-tab-btn" data-filter="engine">Engine Tuning</button>
+                <button class="gallery-tab-btn" data-filter="chassis">Chassis &amp; Brakes</button>
+                <button class="gallery-tab-btn" data-filter="detailing">Concours Detailing</button>
+            </div>
+
+            <!-- 16 Photos Bento Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- Photo 1 -->
+                <div class="gallery-card featured-wide" data-cat="hypercars"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1600&q=80', 'McLaren 720S Track Alignment & Corner Weighing', 'Hypercars')">
+                    <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1000&q=80"
+                        alt="McLaren 720S"
+                        onerror="this.src='https://placehold.co/1000x600/131318/d9e021?text=McLaren+720S'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Hypercars</span>
+                        <h4 class="gallery-card-title">McLaren 720S Track Alignment</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="gallery-card" data-cat="engine"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1600&q=80', 'Ferrari Twin-Turbo V8 Engine Blueprinting', 'Engine Tuning')">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80"
+                        alt="Ferrari V8 Engine"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=V8+Engine'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Engine Tuning</span>
+                        <h4 class="gallery-card-title">Twin-Turbo V8 Blueprinting</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="gallery-card" data-cat="chassis"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1600793575654-910699b5e4d4?auto=format&fit=crop&w=1600&q=80', 'Brembo Carbon-Ceramic Caliper Installation', 'Chassis & Brakes')">
+                    <img src="https://images.unsplash.com/photo-1600793575654-910699b5e4d4?auto=format&fit=crop&w=800&q=80"
+                        alt="Brembo Calipers"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Brembo+Carbon'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Chassis &amp; Brakes</span>
+                        <h4 class="gallery-card-title">Brembo Carbon Matrix Retrofit</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="gallery-card" data-cat="detailing"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1600&q=80', 'Graphene Matrix 10H Ceramic Coating Cure', 'Concours Detailing')">
+                    <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80"
+                        alt="Ceramic Detailing"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Ceramic+Detailing'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Concours Detailing</span>
+                        <h4 class="gallery-card-title">Graphene Matrix 10H Cure</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="gallery-card" data-cat="hypercars"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80', 'Porsche 911 GT3 RS Aerodynamics Package', 'Hypercars')">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+                        alt="Porsche GT3 RS"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Porsche+GT3RS'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Hypercars</span>
+                        <h4 class="gallery-card-title">Porsche GT3 RS Track Setup</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="gallery-card featured-wide" data-cat="engine"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1600&q=80', 'Superflow Synchronized AWD Dyno Cell Tuning', 'Engine Tuning')">
+                    <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1000&q=80"
+                        alt="Dyno Cell"
+                        onerror="this.src='https://placehold.co/1000x600/131318/d9e021?text=Dyno+Tuning+Cell'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Engine Tuning</span>
+                        <h4 class="gallery-card-title">Superflow Synchronized Dyno Run</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="gallery-card" data-cat="chassis"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1600&q=80', 'Centerlock Forged Wheels Custom Finished', 'Chassis & Brakes')">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80"
+                        alt="Forged Wheels"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Forged+Wheels'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Chassis &amp; Brakes</span>
+                        <h4 class="gallery-card-title">Centerlock Wheel Fitment</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="gallery-card" data-cat="detailing"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1600&q=80', 'Clean-Room Paint Correction & High-Gloss PPF', 'Concours Detailing')">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80"
+                        alt="Paint Correction"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Paint+Correction'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Concours Detailing</span>
+                        <h4 class="gallery-card-title">Clean-Room Multi-Stage Polish</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 9 -->
+                <div class="gallery-card" data-cat="hypercars"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1600&q=80', 'Lamborghini Huracan STO Exhaust Flow Optimization', 'Hypercars')">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80"
+                        alt="Huracan STO"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Lamborghini+STO'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Hypercars</span>
+                        <h4 class="gallery-card-title">Huracan STO Exhaust Resonance</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 10 -->
+                <div class="gallery-card" data-cat="engine"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=1600&q=80', 'Bosch Motorsport ECU Calibration & Live Telemetry', 'Engine Tuning')">
+                    <img src="https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=800&q=80"
+                        alt="ECU Telemetry"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=ECU+Telemetry'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Engine Tuning</span>
+                        <h4 class="gallery-card-title">Bosch Motorsport ECU Flashing</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 11 -->
+                <div class="gallery-card" data-cat="chassis"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1600793575654-910699b5e4d4?auto=format&fit=crop&w=1600&q=80', 'Öhlins TTX Coilover Suspension Valve Shimming', 'Chassis & Brakes')">
+                    <img src="https://images.unsplash.com/photo-1600793575654-910699b5e4d4?auto=format&fit=crop&w=800&q=80"
+                        alt="Öhlins Coilovers"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Coilover+Valve'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Chassis &amp; Brakes</span>
+                        <h4 class="gallery-card-title">Öhlins TTX Shimming Lab</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 12 -->
+                <div class="gallery-card" data-cat="detailing"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1600&q=80', 'Interior Alcantara & Nappa Leather Rejuvenation', 'Concours Detailing')">
+                    <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80"
+                        alt="Alcantara Detailing"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Alcantara+Care'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Concours Detailing</span>
+                        <h4 class="gallery-card-title">Alcantara &amp; Nappa Spa</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 13 -->
+                <div class="gallery-card" data-cat="hypercars"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1600&q=80', 'Aston Martin DBS Superleggera Engine Health Check', 'Hypercars')">
+                    <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80"
+                        alt="Aston Martin DBS"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Aston+Martin+DBS'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Hypercars</span>
+                        <h4 class="gallery-card-title">Aston Martin DBS Inspection</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 14 -->
+                <div class="gallery-card" data-cat="engine"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1600&q=80', 'Custom Billet Turbo Compressor Wheel Balancing', 'Engine Tuning')">
+                    <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=800&q=80"
+                        alt="Turbo Balancing"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=Turbo+Balancing'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Engine Tuning</span>
+                        <h4 class="gallery-card-title">Billet Turbo High-RPM Balance</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 15 -->
+                <div class="gallery-card" data-cat="chassis"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1600&q=80', '3D Laser Alignment Calibration Screen Live View', 'Chassis & Brakes')">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80"
+                        alt="3D Alignment"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=3D+Laser+Rig'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Chassis &amp; Brakes</span>
+                        <h4 class="gallery-card-title">Laser Geometry Target Rig</h4>
+                    </div>
+                </div>
+
+                <!-- Photo 16 -->
+                <div class="gallery-card" data-cat="detailing"
+                    onclick="openLightbox('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1600&q=80', 'Self-Healing TPU Paint Protection Film Wrap Bay', 'Concours Detailing')">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80"
+                        alt="TPU PPF Wrap"
+                        onerror="this.src='https://placehold.co/800x600/131318/d9e021?text=PPF+Wrap+Bay'">
+                    <div class="gallery-card-overlay">
+                        <span class="gallery-card-tag">Concours Detailing</span>
+                        <h4 class="gallery-card-title">TPU PPF Seamless Wrap</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding faq-section" id="faqs">
+        <div class="container">
+            <div class="faq-layout">
+
+                <!-- Left Column: Diagnostic Station Monitor -->
+                <div class="faq-telemetry-monitor">
+                    <div class="monitor-screen-header">
+                        <div class="brand-logo" style="font-size: 1.1rem;">
+                            <i class="fa-solid fa-microchip" style="color: var(--neon-lime);"></i>
+                            DIAGNOSTIC TELEMETRY
+                        </div>
+                        <div class="sys-status-badge">
+                            <span class="led-dot"></span> REAL-TIME
+                        </div>
+                    </div>
+
+                    <p style="font-size: 0.9rem; color: #a5a5b5; margin-bottom: 24px;">
+                        Our proprietary workshop software connects directly to your vehicle's telemetry bus. Below are
+                        answers to client inquiries regarding guarantees, dyno protocols, and exotic vehicle procedures.
+                    </p>
+
+                    <div class="diagnostic-bar-row">
+                        <div class="diag-label">
+                            <span>ECU Safety Bounds Verification</span>
+                            <span style="color: var(--neon-lime);">100% OK</span>
+                        </div>
+                        <div class="diag-progress-bar">
+                            <div class="diag-fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="diagnostic-bar-row">
+                        <div class="diag-label">
+                            <span>Original OEM Warranty Protection</span>
+                            <span style="color: var(--neon-lime);">COMPLIANT</span>
+                        </div>
+                        <div class="diag-progress-bar">
+                            <div class="diag-fill" style="width: 96%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="diagnostic-bar-row">
+                        <div class="diag-label">
+                            <span>Chandigarh Clean-Room Filtration</span>
+                            <span style="color: var(--neon-lime);">99.97% HEPA</span>
+                        </div>
+                        <div class="diag-progress-bar">
+                            <div class="diag-fill" style="width: 99%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="diag-hotline-box">
+                        <div class="diag-hotline-title">
+                            <i class="fa-solid fa-headset" style="color: var(--neon-lime);"></i> Direct Engineer Hotline
+                        </div>
+                        <p style="font-size: 0.85rem; color: #b5b5c2; margin-bottom: 12px;">
+                            Need custom modifications or track day preparation? Speak directly with Chief Engineer.
+                        </p>
+                        <a href="tel:+919876543210" class="btn-primary"
+                            style="padding: 10px 18px; font-size: 0.8rem; width: 100%;">
+                            <i class="fa-solid fa-phone"></i> Call Lab Dispatch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: 10 Sleek Accordion Items -->
+                <div class="faq-accordion-group" id="faqAccordion">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-accordion-item active">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">01</span>
+                                What supercars and exotic performance brands do you specialize in?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content" style="max-height: 250px;">
+                            <div class="faq-body-inner">
+                                We specialize extensively in Porsche (911, Cayman, Taycan), Ferrari, Lamborghini,
+                                McLaren, Aston Martin, Audi RS, BMW M-Power, and Mercedes-AMG. Our workshop houses
+                                dedicated OEM factory diagnostic computer interfaces (PIWIS, SD3, ODIS, STAR) tailored
+                                for each specific manufacturer.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">02</span>
+                                Will custom ECU remapping affect my vehicle engine's mechanical safety?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                Never at Next Gear. All our calibrations preserve factory thermal and knock safety
+                                limiters. We log exhaust gas temperatures (EGT), air-fuel ratios (AFR), and knock
+                                sensors on our synchronized 4WD dynamometer to ensure your engine runs safely even in
+                                extreme 45&deg;C Indian summer conditions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">03</span>
+                                Do you offer covered flatbed vehicle transport to and from Chandigarh?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                Yes. We operate an enclosed, air-suspension hydraulic flatbed transporter with ultra-low
+                                approach ramps specifically designed for track-spec splitters and lowered hypercars
+                                across Chandigarh, Punjab, Haryana, Himachal Pradesh, and Delhi NCR.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">04</span>
+                                What is the turnaround time for a complete engine overhaul?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                A blueprinted engine rebuild typically takes between 14 to 28 business days depending on
+                                parts availability (e.g., custom forged Carrillo rods or CP pistons imported from
+                                Germany/UK) and includes clean-room micrometer assembly, ultrasonic cleaning, and
+                                100-hour dyno break-in.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">05</span>
+                                How frequently should Carbon-Ceramic brake systems be inspected?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                We recommend checking rotor thickness and surface matrix wear every 10,000 km for street
+                                driving, and after every track weekend. Our specialized optical wear gauge measures
+                                exact rotor density without abrasive contact to safeguard against chipping.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">06</span>
+                                What warranty is provided on parts and precision rebuild labor?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                All workshop mechanical craftsmanship carries our 12-Month / 20,000 km Next Gear
+                                Guarantee. Performance hardware, titanium exhausts, and ceramic coatings carry their
+                                respective manufacturer and laboratory certifications up to 5 years.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 7 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">07</span>
+                                Can I view my car's live dyno run and telematics data in real-time?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                Absolutely! Our customer VIP lounge features a high-impact armored glass observation
+                                window overlooking the dynamometer cell with dual 4K monitors displaying real-time
+                                horsepower, torque curves, boost pressure, and exhaust temperatures.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 8 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">08</span>
+                                What makes your 3D Laser Alignment superior to standard wheel alignment?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                Standard alignment clamps onto outer tire rubber which deflects. Our laser sensors clamp
+                                directly to the wheel hub center, compensating for runout with 0.005&deg; precision, and
+                                our setup integrates digital corner weight scales to account for driver ballast.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 9 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">09</span>
+                                Do you provide Stage 1 / Stage 2 upgrades for luxury German SUVs?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                Yes, we frequently build high-performance SUVs including the Porsche Cayenne Turbo GT,
+                                Lamborghini Urus, Audi RSQ8, BMW X5M, and Mercedes-AMG G63 with bespoke downpipes,
+                                transmission software tunes, and intercooler packages.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 10 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-header-btn">
+                            <span class="faq-question-text">
+                                <span class="faq-q-num">10</span>
+                                How do I schedule an emergency diagnostic or VIP appointment?
+                            </span>
+                            <span class="faq-toggle-icon"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                        <div class="faq-body-content">
+                            <div class="faq-body-inner">
+                                You can book instantly using our online interactive booking form below, or reach out to
+                                our dedicated concierge desk at +91 98765 43210 for immediate slot reservation and
+                                flatbed scheduling.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding contact-section" id="contact">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto 50px auto;">
+                <div class="badge-tag">
+                    <i class="fa-solid fa-location-crosshairs"></i> Chandigarh Engineering Hub
+                </div>
+                <h2 class="section-title">
+                    Book Your Machine's <span>Diagnostic Bay</span>
+                </h2>
+                <p class="section-desc" style="margin-left: auto; margin-right: auto;">
+                    Schedule your service, consultation, or dyno session with our master automotive engineers. Fast
+                    confirmations guaranteed within 60 minutes.
+                </p>
+            </div>
+
+            <div class="contact-layout">
+
+                <!-- Left Column: Interactive Form -->
+                <div class="contact-form-card">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 24px; color: #fff;">
+                        VIP Appointment Request
+                    </h3>
+                    <form id="appointmentForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row-2">
+                            <div class="form-field">
+                                <label class="field-label" for="clientName">Full Name *</label>
+                                <input type="text" id="clientName" class="field-input"
+                                    placeholder="e.g. Vikramaditya Singh" required>
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label" for="clientPhone">Contact Number *</label>
+                                <input type="tel" id="clientPhone" class="field-input" placeholder="+91 98765 XXXXX"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-field">
+                                <label class="field-label" for="clientEmail">Email Address *</label>
+                                <input type="email" id="clientEmail" class="field-input" placeholder="client@domain.com"
+                                    required>
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label" for="carModel">Car Make &amp; Model *</label>
+                                <input type="text" id="carModel" class="field-input"
+                                    placeholder="e.g. Porsche 911 GT3 / BMW M4" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-field">
+                                <label class="field-label" for="serviceSelect">Service Required *</label>
+                                <select id="serviceSelect" class="field-select" required>
+                                    <option value="" disabled selected>Select Master Service</option>
+                                    <option value="V12 Engine Rebuild">V12 & Twin-Turbo Engine Rebuilds</option>
+                                    <option value="Precision ECU Remap">Precision ECU Remapping & Dyno Tuning</option>
+                                    <option value="Braking & Suspension Setup">Carbon-Ceramic Braking & Suspension
+                                    </option>
+                                    <option value="Dual-Clutch Transmission">Dual-Clutch Transmission Overhaul</option>
+                                    <option value="3D Laser Alignment">Advanced 3D Laser Wheel Alignment</option>
+                                    <option value="Concours Detailing & PPF">Concours Detailing & Ceramic Matrix
+                                    </option>
+                                    <option value="General VIP Diagnostic">General VIP Diagnostic Bay Session</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label class="field-label" for="preferredDate">Preferred Date *</label>
+                                <input type="date" id="preferredDate" class="field-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label class="field-label" for="specialNotes">Specific Symptoms or Desired
+                                Modifications</label>
+                            <textarea id="specialNotes" class="field-textarea"
+                                placeholder="Describe symptoms, noise, desired boost levels, track setup requirements, or previous work..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%; padding: 16px;">
+                            <i class="fa-solid fa-paper-plane"></i> Confirm VIP Bay Reservation
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Chandigarh Location, Direct Contact, Google Map -->
+                <div class="contact-info-panel">
+                    <div class="chandigarh-info-box">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="info-text-heading">Workshop Location</h4>
+                                <p class="info-text-body">
+                                    Plot 48, Industrial Area, Phase II,<br>
+                                    Chandigarh, 160002, India
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="info-text-heading">Operating Hours</h4>
+                                <p class="info-text-body">
+                                    Monday &ndash; Saturday: 08:30 AM &ndash; 08:00 PM<br>
+                                    Sunday: VIP Track Concierge &amp; Emergency Transport
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="info-text-heading">Direct Phone Lines</h4>
+                                <p class="info-text-body">
+                                    Workshop Dispatch: +91 98765 43210<br>
+                                    Engineering Desk: +91 172 265 4321
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Responsive Chandigarh Map -->
+                    <div class="map-frame-box">
+                        <iframe title="Next Gear Auto Repair Chandigarh Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13721.282855146687!2d76.79051871217596!3d30.70938361093155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed1b6062f831%3A0xc47b97c0ad440939!2sIndustrial%20Area%20Phase%20II%2C%20Chandigarh%2C%20160002!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Column 1: Brand & Bio -->
+                <div>
+                    <a href="#home" class="brand-logo" style="margin-bottom: 18px;">
+                        <div class="logo-emblem">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div>
+                            NEXT GEAR
+                            <span class="brand-sub">Auto Repair &bull; Tuning</span>
+                        </div>
+                    </a>
+                    <p class="footer-about-text">
+                        Next Gear Auto Repair is Northern India's gold standard for exotic automobile maintenance,
+                        micro-tolerance engine blueprinting, and competition chassis dynamics. Certified master guild
+                        engineers dedicated to velocity.
+                    </p>
+                    <div class="footer-social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-btn" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                            aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                            aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Home Master Bay</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> About Engineering</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Master Services</a></li>
+                        <li><a href="#products"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Performance Parts</a></li>
+                        <li><a href="#gallery"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Supercar Gallery</a></li>
+                        <li><a href="#faqs"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Diagnostic FAQs</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Contact Chandigarh</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Flagship Services -->
+                <div>
+                    <h4 class="footer-col-title">Services Directory</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> V12 &amp; Twin-Turbo
+                                Rebuilds</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Stage 1-3 ECU Remapping</a>
+                        </li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> Carbon-Ceramic
+                                Overhauls</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> PDK &amp; Dual-Clutch
+                                Units</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> 3D Laser Geometry
+                                Alignment</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"
+                                    style="font-size: 0.7rem; color: var(--neon-lime);"></i> 10H Ceramic Coating &amp;
+                                PPF</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Coordinates -->
+                <div>
+                    <h4 class="footer-col-title">Chandigarh Lab</h4>
+                    <ul class="footer-contact-details">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Plot 48, Industrial Area Phase II, Chandigarh - 160002, India</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91 98765 43210 / +91 172 265 4321</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>concierge@nextgearauto.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Authorized Clean-Room Supercar Certified</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom-bar">
+                <div>
+                    &copy; <span id="currentYear"></span> Next Gear Auto Repair. All Rights Reserved.
+                </div>
+                <div class="creator-credit">
+                    Engineered &amp; Crafted with Absolute Precision by <span>
+                        <a href="https://liin-coders.github.io/liinstudio/">LiinStudio</a> </span>
+                </div>
+                <div class="footer-legal-links">
+                    <a href="javascript:void(0)" onclick="openLegalModal('Privacy Policy')">Privacy Policy</a>
+                    <a href="javascript:void(0)" onclick="openLegalModal('Terms & Conditions')">Terms &amp;
+                        Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- Modal 1: VIP Booking Dialog -->
+    <div class="modal-overlay" id="bookingModalOverlay">
+        <div class="modal-window">
+            <button class="modal-close-btn" onclick="closeModal('bookingModalOverlay')">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="badge-tag" style="margin-bottom: 10px;">
+                <i class="fa-solid fa-wrench"></i> Fast Diagnostic Booking
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 12px; color: #fff;">
+                Reserve Diagnostic Bay
+            </h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;" id="modalServicePrompt">
+                Selected Service: <strong style="color: var(--neon-lime);" id="selectedServiceName">General VIP
+                    Diagnostic</strong>
+            </p>
+
+            <form onsubmit="handleModalBookingSubmit(event)">
+                <div class="form-row-2">
+                    <div class="form-field">
+                        <label class="field-label" for="mName">Full Name *</label>
+                        <input type="text" id="mName" class="field-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="field-label" for="mPhone">Phone Number *</label>
+                        <input type="tel" id="mPhone" class="field-input" placeholder="+91 98765 XXXXX" required>
+                    </div>
+                </div>
+                <div class="form-row-2">
+                    <div class="form-field">
+                        <label class="field-label" for="mCar">Vehicle (Make/Year) *</label>
+                        <input type="text" id="mCar" class="field-input" placeholder="e.g. 2022 Porsche 911" required>
+                    </div>
+                    <div class="form-field">
+                        <label class="field-label" for="mDate">Target Date *</label>
+                        <input type="date" id="mDate" class="field-input" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label class="field-label" for="mNotes">Special Requirements</label>
+                    <textarea id="mNotes" class="field-textarea" style="min-height: 80px;"
+                        placeholder="Any specific issues, dyno objectives, or pickup location..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; padding: 14px;">
+                    <i class="fa-solid fa-check"></i> Submit Reservation Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal 2: Product Quick View -->
+    <div class="modal-overlay" id="productModalOverlay">
+        <div class="modal-window">
+            <button class="modal-close-btn" onclick="closeModal('productModalOverlay')">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="badge-tag">
+                <i class="fa-solid fa-boxes-stacked"></i> High-Performance Hardware
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 8px; color: #fff;"
+                id="modalProdTitle">
+                Component Specifications
+            </h3>
+            <div style="font-family: var(--font-mono); font-size: 1.4rem; color: var(--neon-lime); font-weight: 700; margin-bottom: 16px;"
+                id="modalProdPrice">
+                &#8377;0
+            </div>
+            <p style="color: #c5c5d2; font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;" id="modalProdDesc">
+                Full component narrative.
+            </p>
+            <div
+                style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 16px; border-radius: 6px; margin-bottom: 24px;">
+                <span
+                    style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--neon-lime); text-transform: uppercase;">Technical
+                    Highlights:</span>
+                <p style="color: #fff; font-size: 0.9rem; margin-top: 6px;" id="modalProdSpecs">
+                    Specs info
+                </p>
+            </div>
+            <div style="display: flex; gap: 14px;">
+                <button class="btn-primary" style="flex: 1;" onclick="inquireProduct()">
+                    <i class="fa-solid fa-cart-shopping"></i> Order / Check Fitment
+                </button>
+                <button class="btn-outline" style="flex: 1;" onclick="closeModal('productModalOverlay')">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: High-Res Gallery Lightbox -->
+    <div class="modal-overlay" id="lightboxModalOverlay" onclick="handleLightboxBackdropClick(event)">
+        <div class="modal-window"
+            style="max-width: 900px; background: rgba(10,10,14,0.98); border-color: rgba(217, 224, 33, 0.4);">
+            <button class="modal-close-btn" onclick="closeModal('lightboxModalOverlay')">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="lightbox-image-box">
+                <img id="lightboxImg" src="" alt="Next Gear Supercar Showcase">
+            </div>
+            <div
+                style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <div>
+                    <span class="badge-tag" id="lightboxTag" style="margin-bottom: 4px;">Supercars</span>
+                    <h4 style="font-family: var(--font-heading); font-size: 1.3rem; color: #fff;" id="lightboxCaption">
+                        Gallery Inspection</h4>
+                </div>
+                <button class="btn-outline" style="padding: 8px 18px; font-size: 0.8rem;"
+                    onclick="openBookingModal('Gallery Vehicle Work Order')">
+                    Request Similar Build
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Legal & Privacy Policies -->
+    <div class="modal-overlay" id="legalModalOverlay">
+        <div class="modal-window">
+            <button class="modal-close-btn" onclick="closeModal('legalModalOverlay')">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 16px; color: #fff;"
+                id="legalModalTitle">
+                Legal Policy
+            </h3>
+            <div style="color: #b5b5c2; font-size: 0.92rem; line-height: 1.7; max-height: 380px; overflow-y: auto; padding-right: 10px;"
+                id="legalModalBody">
+                <p style="margin-bottom: 14px;">
+                    Next Gear Auto Repair operates in strict accordance with automotive engineering safety standards.
+                    All diagnostic telemetry data is stored securely and never shared with unauthorized external
+                    entities.
+                </p>
+                <p style="margin-bottom: 14px;">
+                    Performance engine tuning, dyno runs, and aftermarket components may affect certain original
+                    manufacturer powertrain parameters. Next Gear Auto Repair conducts full client disclosures and
+                    digital signing prior to high-performance recalibration.
+                </p>
+                <p>
+                    Plot 48, Industrial Area Phase II, Chandigarh - 160002. Engineered & Crafted with Absolute Precision
+                    by LiinStudio.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Stack -->
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
